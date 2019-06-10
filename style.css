@@ -10,3 +10,8 @@
 p {
   font-family: Arial;
 }
+
+body {
+  background-color: #111;
+  color: #bbb;
+}

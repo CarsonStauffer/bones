@@ -1,3 +1,6 @@
+var textColor = "#bbbbbb"
+var lineColor = "#2a2a2a"
+
 var colors = [
   "#e41a1c",
   "#377eb8",
@@ -340,21 +343,35 @@ function onLoad() {
           borderWidth: 1
         }
       },
-      title: {
-        display: true,
-        text: "Genre Success on Steam"
+      legend: {
+        labels: {
+          fontColor: textColor
+        }
       },
       scales: {
         yAxes: [{
           scaleLabel: {
             labelString: "Paid Games with over 20,000 Estimated Owners on Steam Spy",
-            display: true
+            display: true,
+            fontColor: textColor
           },
           ticks: {
+            fontColor: textColor,
             beginAtZero: true,
             callback: function(value, index, values) {
               return value + '%';
             }
+          },
+          gridLines: {
+            color: lineColor
+          }
+        }],
+        xAxes: [{
+          ticks: {
+            fontColor: textColor
+          },
+          gridLines: {
+            color: lineColor
           }
         }]
       },
