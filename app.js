@@ -359,18 +359,11 @@ function onLoad() {
         }]
       },
       tooltips: {
-        mode: 'nearest',
+        mode: 'index',
         intersect: false,
         callbacks: {
           label: function(tooltipItems, data) {
             return data.datasets[tooltipItems.datasetIndex].label + ': ' + tooltipItems.yLabel + '%';
-            // var label = data.datasets[tooltipItem.datasetIndex].label || '';
-            // if (label) {
-            //     label += ': ';
-            // }
-            // // label += Math.round(tooltipItem.yLabel * 100) / 100;
-            // label += numeral(tooltipItem.yLabel).format('$0,0');
-            // return label;
           }
         }
       }
