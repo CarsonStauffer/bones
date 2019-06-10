@@ -4,12 +4,12 @@ var colors = [
   "#4daf4a",
   "#984ea3",
   "#ff7f00",
-  "cyan",
+  "#F1C40F",
   "#a65628",
   "#f781bf",
-  "pink",
-  "orange",
-  "black"
+  "#68cdd6",
+  "#1ABC9C",
+  "#961627"
 ]
 
 var labels = [
@@ -275,28 +275,28 @@ function onLoad() {
         data: casualData,
         borderColor: colors[2],
         backgroundColor: colors[2],
-        hidden: true
+        hidden: false
       },
       {
         label: 'Early Access',
         data: earlyAccessData,
         borderColor: colors[3],
         backgroundColor: colors[3],
-        hidden: true
+        hidden: false
       },
       {
         label: 'Indie',
         data: indieData,
         borderColor: colors[4],
         backgroundColor: colors[4],
-        hidden: true
+        hidden: false
       },
       {
         label: 'Massively Multiplayer',
         data: massivelyMultiplayerData,
         borderColor: colors[5],
         backgroundColor: colors[5],
-        hidden: true
+        hidden: false
       },
       {
         label: 'Racing',
