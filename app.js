@@ -1,34 +1,30 @@
 function onLoad() {
   var ctx = document.getElementById("myChart").getContext('2d');
   var myChart = new Chart(ctx, {
-    type: 'bar',
+    type: 'line',
     data: {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: [2015, 2016, 2017, 2018],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(75, 192, 192, 0.2)',
-          'rgba(153, 102, 255, 0.2)',
-          'rgba(255, 159, 64, 0.2)'
-        ],
-        borderColor: [
-          'rgba(255,99,132,1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)'
-        ],
-        borderWidth: 1
-      }]
+        label: 'Adventure',
+        data: [.5, .43, .48, .67],
+        borderColor: "#3e95cd"
+      },
+      {
+        label: 'Action',
+        data: [.6, .33, .91, .22],
+        borderColor: "#8e5ea2"
+      }
+    ]
     },
     options: {
       scales: {
+        // xAxes: [{
+        //   type: 'time',
+        //   distribution: 'series'
+        // }],
         yAxes: [{
+          // labelString: "Percent Successful",
+          // display: true,
           ticks: {
             beginAtZero: true
           }
