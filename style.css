@@ -7,11 +7,13 @@
   margin: 0 20vw;
 }
 
-p {
-  font-family: Arial;
-}
-
 body {
   background-color: #111;
   color: #bbb;
+  font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+  margin: 3rem auto;
 }
