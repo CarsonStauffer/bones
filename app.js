@@ -274,25 +274,29 @@ function onLoad() {
         label: 'Casual',
         data: casualData,
         borderColor: colors[2],
-        backgroundColor: colors[2]
+        backgroundColor: colors[2],
+        hidden: true
       },
       {
         label: 'Early Access',
         data: earlyAccessData,
         borderColor: colors[3],
-        backgroundColor: colors[3]
+        backgroundColor: colors[3],
+        hidden: true
       },
       {
         label: 'Indie',
         data: indieData,
         borderColor: colors[4],
-        backgroundColor: colors[4]
+        backgroundColor: colors[4],
+        hidden: true
       },
       {
         label: 'Massively Multiplayer',
         data: massivelyMultiplayerData,
         borderColor: colors[5],
-        backgroundColor: colors[5]
+        backgroundColor: colors[5],
+        hidden: true
       },
       {
         label: 'Racing',
@@ -333,7 +337,7 @@ function onLoad() {
           borderWidth: 2
         },
         point: {
-          borderWidth: 5
+          borderWidth: 1
         }
       },
       title: {
@@ -341,10 +345,6 @@ function onLoad() {
         text: "Genre Success on Steam"
       },
       scales: {
-        // xAxes: [{
-        //   type: 'time',
-        //   distribution: 'series'
-        // }],
         yAxes: [{
           scaleLabel: {
             labelString: "Paid Games with over 20,000 Estimated Owners on Steam Spy",
