@@ -275,28 +275,28 @@ function onLoad() {
         data: casualData,
         borderColor: colors[2],
         backgroundColor: colors[2],
-        hidden: false
+        hidden: true
       },
       {
         label: 'Early Access',
         data: earlyAccessData,
         borderColor: colors[3],
         backgroundColor: colors[3],
-        hidden: false
+        hidden: true
       },
       {
         label: 'Indie',
         data: indieData,
         borderColor: colors[4],
         backgroundColor: colors[4],
-        hidden: false
+        hidden: true
       },
       {
         label: 'Massively Multiplayer',
         data: massivelyMultiplayerData,
         borderColor: colors[5],
         backgroundColor: colors[5],
-        hidden: false
+        hidden: true
       },
       {
         label: 'Racing',
